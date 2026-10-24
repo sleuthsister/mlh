@@ -26,7 +26,7 @@ html, body, [class*="css"], [data-testid="stAppViewContainer"] {
 
 /* Background & serene ambient dark gradient */
 .stApp, [data-testid="stAppViewContainer"] {
-    background: #0C1613 !important;
+    background: radial-gradient(circle at 15% 15%, #132A22 0%, #0C1613 55%, #070D0B 100%) !important;
     color: #ECFDF5 !important;
 }
 
