@@ -28,7 +28,7 @@ A fun, calming, zen-styled Streamlit application powered by **Gemma** open model
 pip install -r requirements.txt
 ```
 
-### 3. Launch the Application
+### 2. Launch the Application
 ```bash
 streamlit run app.py
 ```
