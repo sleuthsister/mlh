@@ -28,17 +28,6 @@ A fun, calming, zen-styled Streamlit application powered by **Gemma** open model
 pip install -r requirements.txt
 ```
 
-### 2. Configure API Key
-Create a `.env` file from the provided example:
-```bash
-copy .env.example .env
-```
-Add your Google AI Studio API key:
-```env
-GEMINI_API_KEY=your_key_here
-```
-*(Alternatively, enter it directly into the running app's sidebar settings.)*
-
 ### 3. Launch the Application
 ```bash
 streamlit run app.py
