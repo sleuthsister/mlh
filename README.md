@@ -6,12 +6,18 @@ A fun, calming, zen-styled Streamlit application powered by **Gemma** open model
 
 ## ✨ Features
 
-- **🧘 Zen Interface**: Calming sage-green aesthetics, smooth breathing pulses, and clean typography.
-- **⚡ Multiple Choices**: Enter 2 or more options with dynamic add/remove, plus one-click preset dilemmas (Pizza vs Sushi, Sleep vs Gym, etc.).
-- **🔮 Gemma-Powered Decision Oracle**: Uses Gemma (`gemma-2-9b-it`, `gemma-2-27b-it`) or Gemini via Google AI Studio.
-- **🎭 Customizable Personas**: Choose between *Zen Master*, *Cosmic Oracle*, *Chaos Goblin*, or *Ruthless Pragmatist*.
-- **🍵 The Verdict Card**: Delivers an undeniable final decision, philosophical wisdom, gentle roast / reality check, and a 10-second micro-ritual.
-- **🎈 Built-in Demo Mode**: If no API key is set yet, it runs smoothly in demo mode so you can preview the vibe immediately!
+- **🧘 Dark Zen Aesthetics**: Calming twilight-jade theme, glowing ambient pulses, and high-contrast typography.
+- **⚡ Multiple Choices**: Enter 2 to 6 options with dynamic add/remove, plus one-click preset dilemmas (*Pizza vs Sushi*, *Sleep vs Gym*, etc.).
+- **🔮 Multi-Tier Decision Oracle**: Native support for Gemma (`gemma-4-31b-it`, `gemma-4-26b-a4b-it`) and Gemini with self-healing REST failover.
+- **🎭 Customizable Personas**: Choose how the oracle advises you:
+  | Persona | Vibe & Approach |
+  | :--- | :--- |
+  | 🧘 **Zen Master** | Mindful, serene, seeks inner harmony and presence |
+  | 🔮 **Cosmic Oracle** | Mystical, poetic, reads the cosmic threads of destiny |
+  | ⚡ **Chaos Goblin** | Spicy, bold, and delightfully spontaneous |
+  | 🎯 **Ruthless Pragmatist** | Ultra-logical, razor-sharp, zero hesitation |
+- **🍵 The Verdict Card**: Delivers an undeniable final decision, philosophical wisdom, gentle reality check, and a 10-second micro-ritual.
+- **🎈 Built-in Demo Mode**: If no API key is provided, preview simulated zen wisdom immediately.
 
 ---
 
@@ -22,19 +28,18 @@ A fun, calming, zen-styled Streamlit application powered by **Gemma** open model
 pip install -r requirements.txt
 ```
 
-### 2. Set your Google Gemini API Key
-You have two ways to add your API key:
-- **Option A**: Create a `.env` file from `.env.example`:
-  ```bash
-  copy .env.example .env
-  ```
-  Then paste your API key:
-  ```env
-  GEMINI_API_KEY=AIzaSy...
-  ```
-- **Option B**: Enter it directly in the sidebar inside the running app!
+### 2. Configure API Key
+Create a `.env` file from the provided example:
+```bash
+copy .env.example .env
+```
+Add your Google AI Studio API key:
+```env
+GEMINI_API_KEY=your_key_here
+```
+*(Alternatively, enter it directly into the running app's sidebar settings.)*
 
-### 3. Run the App
+### 3. Launch the Application
 ```bash
 streamlit run app.py
 ```
